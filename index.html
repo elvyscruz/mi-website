@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Peces Betta Paradise</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#081b29;
+      color:white;
+      line-height:1.6;
+    }
+
+    header{
+      height:100vh;
+      background:
+        linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.7)),
+        url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    .hero{
+      max-width:800px;
+    }
+
+    .hero h1{
+      font-size:4rem;
+      margin-bottom:20px;
+      color:#00d4ff;
+    }
+
+    .hero p{
+      font-size:1.3rem;
+      margin-bottom:30px;
+      color:#e2f6ff;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:15px 35px;
+      background:#00d4ff;
+      color:#00131f;
+      text-decoration:none;
+      font-weight:bold;
+      border-radius:50px;
+      transition:.3s;
+    }
+
+    .btn:hover{
+      background:white;
+      transform:translateY(-3px);
+    }
+
+    section{
+      padding:80px 10%;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:50px;
+    }
+
+    .section-title h2{
+      font-size:2.5rem;
+      color:#00d4ff;
+      margin-bottom:10px;
+    }
+
+    .info-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#10293b;
+      border-radius:20px;
+      overflow:hidden;
+      transition:.3s;
+      box-shadow:0 5px 15px rgba(0,0,0,.3);
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+    }
+
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    .card-content h3{
+      color:#00d4ff;
+      margin-bottom:10px;
+    }
+
+    .features{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+      margin-top:40px;
+    }
+
+    .feature{
+      background:#0f2433;
+      padding:25px;
+      border-radius:15px;
+      text-align:center;
+    }
+
+    .feature h3{
+      margin-bottom:10px;
+      color:#00d4ff;
+    }
+
+    .shop{
+      background:#0d2230;
+    }
+
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:30px;
+    }
+
+    .product{
+      background:#14354c;
+      border-radius:20px;
+      overflow:hidden;
+      text-align:center;
+      transition:.3s;
+    }
+
+    .product:hover{
+      transform:scale(1.03);
+    }
+
+    .product img{
+      width:100%;
+      height:260px;
+      object-fit:cover;
+    }
+
+    .product-content{
+      padding:20px;
+    }
+
+    .price{
+      font-size:1.5rem;
+      color:#00ffd0;
+      margin:15px 0;
+      font-weight:bold;
+    }
+
+    footer{
+      background:#06111a;
+      text-align:center;
+      padding:30px;
+      color:#9fc6d8;
+    }
+
+    .wave{
+      animation:float 3s ease-in-out infinite;
+    }
+
+    @keyframes float{
+      0%{transform:translateY(0px);}
+      50%{transform:translateY(-10px);}
+      100%{transform:translateY(0px);}
+    }
+
+    @media(max-width:768px){
+      .hero h1{
+        font-size:2.5rem;
+      }
+
+      .hero p{
+        font-size:1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="hero">
+      <h1 class="wave">Peces Betta Paradise</h1>
+      <p>
+        Descubre la belleza de los peces Betta. Colores intensos,
+        elegancia única y los mejores ejemplares para tu acuario.
+      </p>
+      <a href="#shop" class="btn">Comprar Ahora</a>
+    </div>
+  </header>
+
+  <section>
+    <div class="section-title">
+      <h2>¿Qué son los Peces Betta?</h2>
+      <p>Uno de los peces ornamentales más populares del mundo.</p>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <h3>🐟 Colores Vibrantes</h3>
+        <p>
+          Los Bettas destacan por sus increíbles colores metálicos,
+          rojos, azules y tornasolados.
+        </p>
+      </div>
+
+      <div class="feature">
+        <h3>💧 Fáciles de Cuidar</h3>
+        <p>
+          Son ideales para principiantes gracias a su resistencia y
+          sencillo mantenimiento.
+        </p>
+      </div>
+
+      <div class="feature">
+        <h3>🏠 Perfectos para Acuarios</h3>
+        <p>
+          Con el ambiente adecuado, los Bettas viven felices y lucen
+          espectaculares.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">
+      <h2>Tipos de Peces Betta</h2>
+      <p>Conoce algunas variedades populares.</p>
+    </div>
+
+    <div class="info-grid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1524704796725-9fc3044a58b2?q=80&w=1200&auto=format&fit=crop" alt="Betta Halfmoon">
+        <div class="card-content">
+          <h3>Betta Halfmoon</h3>
+          <p>
+            Famoso por su cola en forma de media luna y colores intensos.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1571752726703-5e7d1f6a7d1c?q=80&w=1200&auto=format&fit=crop" alt="Betta Crowntail">
+        <div class="card-content">
+          <h3>Betta Crowntail</h3>
+          <p>
+            Posee aletas puntiagudas que parecen una corona elegante.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1535591273668-578e31182c4f?q=80&w=1200&auto=format&fit=crop" alt="Betta Koi">
+        <div class="card-content">
+          <h3>Betta Koi</h3>
+          <p>
+            Variedad moderna con patrones inspirados en peces koi japoneses.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="shop" id="shop">
+    <div class="section-title">
+      <h2>Tienda de Bettas</h2>
+      <p>Compra ejemplares seleccionados de alta calidad.</p>
+    </div>
+
+    <div class="products">
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?q=80&w=1200&auto=format&fit=crop" alt="Betta Azul">
+        <div class="product-content">
+          <h3>Betta Azul Eléctrico</h3>
+          <p>
+            Hermoso ejemplar macho con colores metálicos brillantes.
+          </p>
+          <div class="price">US$25</div>
+          <a href="#" class="btn">Comprar</a>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1200&auto=format&fit=crop" alt="Betta Rojo">
+        <div class="product-content">
+          <h3>Betta Rojo Flame</h3>
+          <p>
+            Cola amplia y color rojo intenso perfecto para acuarios premium.
+          </p>
+          <div class="price">US$30</div>
+          <a href="#" class="btn">Comprar</a>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1494256997604-768d1f608cac?q=80&w=1200&auto=format&fit=crop" alt="Betta Koi">
+        <div class="product-content">
+          <h3>Betta Koi Galaxy</h3>
+          <p>
+            Patrón exclusivo y colores únicos inspirados en galaxias.
+          </p>
+          <div class="price">US$45</div>
+          <a href="#" class="btn">Comprar</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">
+      <h2>Consejos de Cuidado</h2>
+      <p>Mantén tus Bettas saludables y felices.</p>
+    </div>
+
+    <div class="features">
+
+      <div class="feature">
+        <h3>🌡️ Temperatura</h3>
+        <p>
+          Mantén el agua entre 24°C y 28°C para un ambiente ideal.
+        </p>
+      </div>
+
+      <div class="feature">
+        <h3>🍽️ Alimentación</h3>
+        <p>
+          Proporciona alimento especializado y evita sobrealimentarlos.
+        </p>
+      </div>
+
+      <div class="feature">
+        <h3>🧼 Limpieza</h3>
+        <p>
+          Cambia parte del agua semanalmente para conservar la calidad.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      © 2026 Peces Betta Paradise - Todos los derechos reservados
+    </p>
+  </footer>
+
+  <script>
+    // Animación simple para botones
+    const buttons = document.querySelectorAll('.btn');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('mouseenter', () => {
+        btn.style.boxShadow = '0 0 20px rgba(0,212,255,0.8)';
+      });
+
+      btn.addEventListener('mouseleave', () => {
+        btn.style.boxShadow = 'none';
+      });
+    });
+  </script>
+
+</body>
+</html>
